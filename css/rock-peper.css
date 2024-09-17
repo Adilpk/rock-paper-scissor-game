@@ -29,7 +29,7 @@ body{
 .score{
   margin-top: 60px;
 }
-.main-btn{
+.main-btn,.auto-play-btn{
   font-size: 15px;
   padding: 6px 14px;
 }
