@@ -6,22 +6,20 @@
   <link rel="stylesheet" href="css/rock-peper.css">
   <body>
     <p class="heading">Rock Paper Scissors</p>
-    <button onclick="playGame('rock');" class="btn"><img src="thumbnail/rock-emoji.png" class="img-new"></button>
-    <button onclick="playGame('paper');" class="btn"><img src="thumbnail/paper-emoji.png" class="img-new"></button>
-    <button onclick="playGame('scissors');" class="btn"><img src="thumbnail/scissors-emoji.png" class="img-new"></button>
+    <button class="btn js-rock-button"><img src="thumbnail/rock-emoji.png" class="img-new"></button>
+    <button class="btn js-paper-button"><img src="thumbnail/paper-emoji.png" class="img-new"></button>
+    <button class="btn js-scissors-button"><img src="thumbnail/scissors-emoji.png" class="img-new"></button>
     <p class="js-result result"></p>
     <p class="js-score-bord"></p>
     <p class="js-score score"></p>
-    <button class="main-btn" onclick="
+    <button class="main-btn js-reset-btn" onclick="
       score1.wins = 0;
       score1.losses = 0;
       score1.ties = 0;
       localStorage.removeItem('score1');
       updateScoreElement();
     ">Reset Score</button>
-    <button class="auto-play-btn" onclick="
-      autoplay();
-    ">Auto Play</button>
+    <button class="auto-play-btn js-autoplay">Auto Play</button>
     <script src="js/rock-peper.js"></script>
   </body>
 </html>
